@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Pacific Trail Resort::Yurts</title>
+     <link rel="stylesheet" href="css/pacific.css">
+         <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script><script>
+ $(document).ready(function() {
+ 
+    $('.faq_question').click(function() {
+ 
+        if ($(this).parent().is('.open')){
+            $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+            $(this).closest('.faq').removeClass('open');
+ 
+            }else{
+                var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                $(this).closest('.faq').addClass('open');
+            }
+ 
+    });
+ 
+});
+</script>
+</head>
+<body>
+     <div id = "wrapper">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <h1> Pacific trails resort</h1>
+  <nav><ul>
+        <h3>
+        <li><a href="index.html">Home</a></li>
+       <li> <a href="yurts.html">Yurts</a></li>
+       <li> <a href="reservation.html">Reservation</a></li>
+        </h3>
+        </ul></nav>
+           <div id="yurthero"></div>
+          <main>
+                  <h2>Yurts at pacific trail</h2>
+               <div class="faq_container">
+              <div class="faq">
+         <div class="faq_question">Q:What is a yurt?</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer">A:Our luxury yurts are permanent structures four feet off the ground. Each yurt has
+        canvas walls, a wooden floor, and a roof dome that can be opened.</div>
+        </div>        
+        </div>
+             <div class="faq">
+         <div class="faq_question">Q:How are the yurts furnished?</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer">A:Each yurt is furnished with a queen-size bed with down quilt and gas-fired stove.
+        The luxury camping experience also includes electricity and a sink with hot and
+        cold running water. Shower and restroom facilities are located in the lodge.</div>
+        </div>        
+        </div>
+                           <div class="faq">
+         <div class="faq_question">Q: Yurt Packages</div>
+         <div class="faq_answer_container">
+         <div class="faq_answer"><p>A:A variety of luxury yurt packages are available. Choose a package below and contact
+us to begin your reservation. We’re happy to build a custom package just for you!</p>
+       </div>
+        </div>        
+                   </div>
+              </div>
+         </main>
+    <footer><br>
+        <small><i>Copyright &copy; 2016 JavaJam Coffee House<br><a href="mailto:twinkle@patel.com"></a></i></small>
+    </footer>
+    </div>
+</body>
+</html>
